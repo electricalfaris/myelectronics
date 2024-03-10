@@ -1,6 +1,18 @@
+// category:
+// 'X' mixed
+// 'D' : Diode
+// 'R': Resistor
+// 'T': Transistor
+// 'I': Inductor
+// 'C': Capacitors
+// 'S': Sensors
+// 'PB': Power Bench
+// 'M': Motors
+// 'L': Leds
 const CardsData = [
   {
     id: 1,
+    category:'L',
     title: "Wiring Leds",
     image_url: "images/wiring_leds.png",
     desc: "Wiring Leds",
@@ -9,6 +21,7 @@ const CardsData = [
   },
   {
     id: 2,
+    category:'D',
     title: "Diodes",
     image_url: "images/diodes.jpg",
     desc: "Diodes",
@@ -17,6 +30,7 @@ const CardsData = [
   },
   {
     id: 3,
+    category:'R',
     title: "Resistors",
     image_url: "images/resistors.png",
     desc: "Types and Shapes of Resistors",
@@ -25,6 +39,7 @@ const CardsData = [
   },
   {
     id: 4,
+    category:'I',
     title: "Inductors",
     image_url: "images/inductors.jpg",
     desc: "Types and Shapes of Inductors",
@@ -34,6 +49,7 @@ const CardsData = [
 
   {
     id: 5,
+    category:'C',
     title: "Capacitors",
     image_url: "images/capacitors.png",
     desc: "Types and Shapes of Capacitors",
@@ -44,6 +60,7 @@ const CardsData = [
   {
     id: 6,
     title: "Sensors",
+    category:'S',
     image_url: "images/sensors.jpg",
     desc: "Types and Shapes of Transistors",
     ref1: "https://www.instructables.com/Transistors/",
@@ -51,6 +68,7 @@ const CardsData = [
   },
   {
     id: 7,
+    category:'M',
     title: "Motors",
     image_url: "images/motors.png",
     desc: "Types and Shapes of Motors",
@@ -59,7 +77,8 @@ const CardsData = [
   },
   {
     id:8,
-    title:"3 Legs",
+    category:'T',
+    title:"Transistors",
     image_url:"images/legs_3.jpg",
     desc:"3 Legs components",
     ref1:"https://www.instructables.com/3-Legs/",
@@ -68,13 +87,29 @@ const CardsData = [
   },
   {
   id:9,
-  title:"pwoer bench wiring - 1",
+  category:'PB',
+  title:"pwoer bench",
   image_url:"images/power_bench_wiring_1.jpg",
   desc:"power bench wiring - 1",
   ref1:"https://www.instructables.com/Power-Bench-Wiring-1/",
   ref2:"https://www.electricity-magnetism.org/power-bench-wiring-1/",
   },
+ 
   {
+  id:12,
+  title:"Variable Resistors",
+  image_url:"images/variable_resistors.jpg",
+  desc:"power bench wiring - 4",
+  ref1:"https://www.instructables.com/Power-Bench-Wiring-4/",
+  ref2:"https://www.electricity-magnetism.org/power-bench-wiring-4/",
+  }
+];
+
+export default CardsData;
+
+
+/*
+ {
   id:10,
   title:"power bench wiring - 2",
   image_url:"images/power_bench_wiring_2.jpg",
@@ -90,14 +125,5 @@ const CardsData = [
   ref1:"https://www.instructables.com/Power-Bench-Wiring-3/",
   ref2:"https://www.electricity-magnetism.org/power-bench-wiring-3/",
   },
-  {
-  id:12,
-  title:"Variable Resistors",
-  image_url:"images/variable_resistors.jpg",
-  desc:"power bench wiring - 4",
-  ref1:"https://www.instructables.com/Power-Bench-Wiring-4/",
-  ref2:"https://www.electricity-magnetism.org/power-bench-wiring-4/",
-  }
-];
 
-export default CardsData;
+*/
