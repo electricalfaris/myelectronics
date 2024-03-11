@@ -27,26 +27,30 @@ function Card({ title, image_url, desc, ref1, ref2 }) {
 function App() {
   return (
     <>
-      <nav class="static-nav">
-        <h3>Quick Links</h3>
-        <ul>
-          <li>
-            {" "}
-            <a href="100_IC_Circutes.html">100 IC Circutes - Book </a>{" "}
-          </li>
-          <li>
-            {" "}
-            <a href="200_Transistor_Circuits.html">
-              200 Transistor Circuits - Book{" "}
-            </a>{" "}
-          </li>
-          <li>
-            <a href="components.symbols.html">Components Symbols</a>
-          </li>
-        </ul>
-      </nav>
-      <h1>My Electronics</h1>
-      <hr />
+      <header>
+        {" "}
+        <h1>My Electronics</h1>
+      </header>
+      <div className="container">
+        <nav class="static-nav">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              {" "}
+              <a href="100_IC_Circutes.html">100 IC Circutes - Book </a>{" "}
+            </li>
+            <li>
+              {" "}
+              <a href="200_Transistor_Circuits.html">
+                200 Transistor Circuits - Book{" "}
+              </a>{" "}
+            </li>
+            <li>
+              <a href="components.symbols.html">Components Symbols</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <div className="container">
         <div class="row">
