@@ -1,6 +1,5 @@
 import "./App.css";
 import CardsData from "./data";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function Card({ title, image_url, desc, ref1, ref2 }) {
   return (
