@@ -1,18 +1,40 @@
-// category:
-// 'X' mixed
-// 'D' : Diode
-// 'R': Resistor
-// 'T': Transistor
-// 'I': Inductor
-// 'C': Capacitors
-// 'S': Sensors
-// 'PB': Power Bench
-// 'M': Motors
-// 'L': Leds
-const CardsData = [
+const CATEGORY_CODE = {
+  X: "Mixed",
+  D: "Diode",
+  R: "Resistor",
+  PR: "Potentiometer",
+  T: "Transistor",
+  I: "Inductor",
+  C: "Capacitors",
+  S: "Sensors",
+  PB: "Power Bench",
+  M: "Motors",
+  L: "Leds",
+};
+
+const Sub_Pages = [
+  {
+    cat_code_id: CATEGORY_CODE.PR,
+    title: "SubPage Title",
+    image_url: "#",
+    desc: "SubPage Description",
+    ref1: "#",
+    ref2: "#",
+  },
+  {
+    cat_code_id: CATEGORY_CODE.I,
+    title: "SubPage Title",
+    image_url: "#",
+    desc: "SubPage Description",
+    ref1: "#",
+    ref2: "#",
+  },
+];
+
+const Electronics = [
   {
     id: 1,
-    category:'L',
+    category: CATEGORY_CODE.L,
     title: "Wiring Leds",
     image_url: "images/wiring_leds.png",
     desc: "Wiring Leds",
@@ -21,7 +43,7 @@ const CardsData = [
   },
   {
     id: 2,
-    category:'D',
+    category: CATEGORY_CODE.D,
     title: "Diodes",
     image_url: "images/diodes.jpg",
     desc: "Diodes",
@@ -30,7 +52,7 @@ const CardsData = [
   },
   {
     id: 3,
-    category:'R',
+    category: CATEGORY_CODE.R,
     title: "Resistors",
     image_url: "images/resistors.png",
     desc: "Types and Shapes of Resistors",
@@ -39,7 +61,7 @@ const CardsData = [
   },
   {
     id: 4,
-    category:'I',
+    category: CATEGORY_CODE.I,
     title: "Inductors",
     image_url: "images/inductors.jpg",
     desc: "Types and Shapes of Inductors",
@@ -49,7 +71,7 @@ const CardsData = [
 
   {
     id: 5,
-    category:'C',
+    category: CATEGORY_CODE.C,
     title: "Capacitors",
     image_url: "images/capacitors.png",
     desc: "Types and Shapes of Capacitors",
@@ -59,8 +81,8 @@ const CardsData = [
 
   {
     id: 6,
-    title: "Sensors",
-    category:'S',
+    title: CATEGORY_CODE.S,
+    category: "S",
     image_url: "images/sensors.jpg",
     desc: "Types and Shapes of Transistors",
     ref1: "https://www.instructables.com/Transistors/",
@@ -68,7 +90,7 @@ const CardsData = [
   },
   {
     id: 7,
-    category:'M',
+    category: CATEGORY_CODE.M,
     title: "Motors",
     image_url: "images/motors.png",
     desc: "Types and Shapes of Motors",
@@ -76,37 +98,36 @@ const CardsData = [
     ref2: "https://www.electricity-magnetism.org/motors/",
   },
   {
-    id:8,
-    category:'T',
-    title:"Transistors",
-    image_url:"images/legs_3.jpg",
-    desc:"3 Legs components",
-    ref1:"https://www.instructables.com/3-Legs/",
-    ref2:"https://www.electricity-magnetism.org/3-legs/",
+    id: 8,
+    category: CATEGORY_CODE.T,
+    title: "Transistors",
+    image_url: "images/legs_3.jpg",
+    desc: "3 Legs components",
+    ref1: "https://www.instructables.com/3-Legs/",
+    ref2: "https://www.electricity-magnetism.org/3-legs/",
+  },
+  {
+    id: 9,
+    category: CATEGORY_CODE.PR,
+    title: "pwoer bench",
+    image_url: "images/power_bench_wiring_1.jpg",
+    desc: "power bench wiring - 1",
+    ref1: "https://www.instructables.com/Power-Bench-Wiring-1/",
+    ref2: "https://www.electricity-magnetism.org/power-bench-wiring-1/",
+  },
 
-  },
   {
-  id:9,
-  category:'PB',
-  title:"pwoer bench",
-  image_url:"images/power_bench_wiring_1.jpg",
-  desc:"power bench wiring - 1",
-  ref1:"https://www.instructables.com/Power-Bench-Wiring-1/",
-  ref2:"https://www.electricity-magnetism.org/power-bench-wiring-1/",
+    id: 12,
+    category: CATEGORY_CODE.PB,
+    title: "Potentiometer - Variable Resistors",
+    image_url: "images/variable_resistors.jpg",
+    desc: "power bench wiring - 4",
+    ref1: "https://www.instructables.com/Power-Bench-Wiring-4/",
+    ref2: "https://www.electricity-magnetism.org/power-bench-wiring-4/",
   },
- 
-  {
-  id:12,
-  title:"Variable Resistors",
-  image_url:"images/variable_resistors.jpg",
-  desc:"power bench wiring - 4",
-  ref1:"https://www.instructables.com/Power-Bench-Wiring-4/",
-  ref2:"https://www.electricity-magnetism.org/power-bench-wiring-4/",
-  }
 ];
 
-export default CardsData;
-
+export { Electronics, Sub_Pages, CATEGORY_CODE };
 
 /*
  {
