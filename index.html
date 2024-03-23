@@ -1,130 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Google search description" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/masked-icon.png" color="#FFFFFF" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Google search description">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="mask-icon" href="/masked-icon.png" color="#FFFFFF">
-  <meta name="theme-color" content="#ffffff">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <title>My Electronics</title>
-  <style>
-.static-nav{
-  border:1px solid blue;
-  padding:1rem;
-  margin: 2rem;
-}
-  </style>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bs-brain@2.0.3/components/error-404s/error-404-1/assets/css/error-404-1.css"
+    />
+    <title>My Electronics</title>
+  </head>
+  <body>
+    <div id="root"></div>
 
-<body>
-  
-  <div class="container">
-    <h3>Quick Review</h3>
-    <ol>
-      <li>
-        <p><strong>Resistors</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Resistor is a common passive two-terminal electrical component that opposes the flow of current.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Capacitors</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Capacitors store electrical energy in an electric field.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Inductors</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Inductors store energy in a magnetic field when current flows through them.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Diodes</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Diodes allow current to flow in one direction only.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Transistors</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Transistors are semiconductor devices used to amplify or switch electronic signals and electrical power.
-          </li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Integrated Circuits (ICs)</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Integrated circuits contain multiple electronic components (such as transistors, resistors, capacitors)
-            fabricated on a single semiconductor chip.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>LEDs (Light Emitting Diodes)</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>LEDs emit light when current flows through them in the forward direction.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Switches</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Switches are devices used to interrupt or divert the flow of electricity in a circuit.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Potentiometers</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Potentiometers are variable resistors used to control electrical resistance in a circuit.</li>
-        </ul>
-      </li>
-      <li>
-        <p><strong>Connectors</strong>:
-        <div></div>
-        </p>
-        <ul>
-          <li>Connectors are used to join electrical circuits together reliably and securely.</li>
-        </ul>
-      </li>
-    </ol>
-  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-  <div id="root"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
